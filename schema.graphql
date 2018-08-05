@@ -1,0 +1,28 @@
+schema {
+	query: Query
+	mutation: Mutation
+}
+
+type Query {
+	blog(id: ID!): Blog
+	getBlogs(count: Int, nextToken: String): BlogConnection
+	helloWorld: String
+}
+type Mutation{
+	addBlog(id: ID!, topic: String, description: String, status: BlogStatus):Blog
+}
+type Blog{
+	id: ID
+	topic: String
+	description: String
+	status: BlogStatus
+}
+type BlogConnection{
+	blogs: [Blog]
+	nextToken: String
+}
+enum BlogStatus{
+	requested
+	approved
+	presented
+}

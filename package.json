@@ -1,0 +1,20 @@
+{
+  "name": "serverless-blog-appsync-service",
+  "version": "1.0.0",
+  "description": "Blog API",
+  "main": "functions/handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AppSync",
+    "Serverless",
+    "Blog"
+  ],
+  "author": "musema.hassen",
+  "license": "ISC",
+  "dependencies": {
+    "serverless-appsync-plugin": "^1.0.1",
+    "serverless-pseudo-parameters": "^2.1.0"
+  }
+}
